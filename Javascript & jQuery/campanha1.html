@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Unicef</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+<body>
+
+    <!-- menu -->
+    <nav>
+        <a href="index.html" id="logo">LOGO</a>
+        <div class="nav">
+            <a id="menu-icon"><i class="fas fa-bars icon"></i></a>
+            <ul class="menu">
+                <li><a href="sobre.html">Quem Somos</a></li>
+                <li><a href="campanhas.html">Campanhas</a></li>
+                <li><a href="#">Como Contribuir</a></li>
+                <li class="access"><a href="#access">Login / Registo</a></li>
+            </ul>
+        </div>
+    </nav>
+        
+    <!-- popup login & registo -->
+    <div id="access" class="popup-hidden">
+        <div class="access-content">
+            <div class="login">
+                <h3>Inície a sua Sessão</h3>
+                <input type="text" name="username" placeholder="Username">
+                <input type="text" name="password" placeholder="Password">
+                <input type="submit" value="Enviar">
+            </div>
+            <div class="registo">
+                <hr/>
+                <p>Ainda não tem conta? <a href="#">Registe-se aqui!</a></p></div> 
+        </div>
+    </div>
+
+        <!-- popup doacoes -->
+    <div id="donate-here" class="popup-hidden">
+        <div class="donate-content">
+            <div>
+                <h3>Faça a sua Doação</h3>
+                <div class="insert-amount">
+                    <input type="text" name="valor" placeholder="5.00" id="new-donation">
+                    <i>€</i>
+                </div>
+                <input type="submit" value="Enviar" class="submit-donation">
+            </div>      
+        </div>
+    </div>
+
+    <!-- campanha - header -->
+    <header class="campaign-header">
+            <div id="banner">
+            </div>
+            <div class="campaign-name">
+                <h1>Nome da Campanha</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum mollis ultricies. In enim nulla,
+                        pretium vitae bibendum et, molestie eget erat.
+                </h2>
+            </div>
+    </header>
+
+    <!-- campanha -->
+    <section class="grid-campaign">
+
+            <!-- detalhes doacoes -->
+            <div class="donate-details">
+                <div class="donate">
+                    <div class="goal">
+                        <h3>Objectivo</h3>
+                        <h2 class="total-amount"><span id="total-amount">6000</span>€</h2>
+                    </div>
+                    <div class="progress">
+                            <div class="progress-filter"><span id="percentage">25%</span>
+                            </div>
+                        </div>
+                        <p id="donations-money"> </p>
+                </div>
+                <div class="donate-button">
+                    <a>Contribuir</a>
+                </div>
+                <div class="donations">
+                    <div class="donations-values">
+                        <div><a class="donations-filter">Doações</a>
+                        </div>
+                        <div>
+                            <p class="donors-number"><span id="donors-number"> </span> Doadores</p>
+                            <a href="#" class="all-donations">Ver Todas as Doações</a>
+                        </div>
+                        
+                    </div>
+                    <!-- doacoes -->
+                    <div class="entries">
+                        <div class="donation">
+                            <div class="img-border"><img src="assets/img/donors/1.png"></div>
+                            <div class="content"><p class="name">Carlos Martins</p>
+                                <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <p class="donation-val"><span class="money">140</span>€</p>
+                            </div>
+                        </div>
+                        <div class="donation">
+                                <div class="img-border"><img src="assets/img/donors/2.png"></div>
+                                <div class="content"><p class="name">Carlos Martins</p>
+                                    <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <p class="donation-val"><span class="money">70</span>€</p>
+                                </div>
+                        </div>
+                        <div class="donation">
+                                <div class="img-border"><img src="assets/img/donors/3.png"></div>
+                                <div class="content"><p class="name">Rute Martins</p>
+                                    <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                    <p class="donation-val"><span class="money">30</span>€</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- detalhes campanha -->
+            <div class="campaign-details">
+                <div class="tabs">
+                            <input name="tabs" type="radio" id="tab-1" checked="checked" class="input"/>
+
+                            <!-- detalhes da campanha -->
+                            <label for="tab-1" class="label">Detalhes</label>
+                            <div class="panel">
+                                <h1>Detalhes</h1>
+                                <p>Praesent quis mauris luctus, lacinia tortor non, auctor lectus. Nulla facilisi. Aliquam erat volutpat. In scelerisque ante vitae justo fringilla elementum. Donec dictum vitae mauris vel congue. Proin eget turpis in libero iaculis vestibulum et id mauris. Curabitur finibus euismod ligula, eget venenatis quam vestibulum ut. Etiam lacinia tristique ornare. Integer pellentesque enim accumsan, ullamcorper felis congue, viverra sem. Morbi ut hendrerit nisl, vel tincidunt est. Nulla maximus leo ac urna molestie euismod.</p>
+                                <img src="assets/img/campaigns/housing.jpeg">
+                                <p>Donec sagittis arcu a felis cursus, sed placerat tortor fringilla. Nullam eu elementum neque, sit amet gravida sapien. Aliquam ac lacus lobortis risus lacinia tempor. Vivamus in sem volutpat, efficitur elit quis, suscipit lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam posuere tortor eget eros porta elementum. Maecenas pulvinar egestas ultrices. Donec et nibh mollis, vulputate lectus eu, molestie lorem. Donec pretium mattis elementum.</p>
+                                <p>Curabitur malesuada orci ut lorem maximus egestas. Vivamus vel molestie quam. Donec quis rutrum lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc tincidunt lectus nulla, vel aliquam mi facilisis sit amet. Mauris hendrerit risus quis sollicitudin dapibus. Nunc porta pulvinar consectetur. Proin malesuada vel leo eu accumsan. Etiam sapien ipsum, aliquam non augue id, accumsan pharetra arcu. Phasellus nec mauris eget turpis semper vulputate nec non enim. Vestibulum ut elit rhoncus, blandit risus ut, rhoncus ex.</p>
+                            </div>
+                        
+                            <input name="tabs" type="radio" id="tab-2" class="input"/>
+                            
+                            <!-- actualizacoes da campanha -->
+                            <label for="tab-2" class="label">Actualizações</label>
+                            <div class="panel">
+                            <h1>Actualizações</h1>
+                            <p>Donec sagittis arcu a felis cursus, sed placerat tortor fringilla. Nullam eu elementum neque, sit amet gravida sapien. Aliquam ac lacus lobortis risus lacinia tempor. Vivamus in sem volutpat, efficitur elit quis, suscipit lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam posuere tortor eget eros porta elementum. Maecenas pulvinar egestas ultrices. Donec et nibh mollis, vulputate lectus eu, molestie lorem. Donec pretium mattis elementum.</p>
+                            </div>
+                        
+                            <input name="tabs" type="radio" id="tab-3" class="input"/>
+
+                            <!-- detalhes da instituicao -->
+                            <label for="tab-3" class="label">Sobre a Instituíção</label>
+                            <div class="panel">
+                            <h1>Sobre a Instituíção</h1>
+                            <p>Donec sagittis arcu a felis cursus, sed placerat tortor fringilla. Nullam eu elementum neque, sit amet gravida sapien. Aliquam ac lacus lobortis risus lacinia tempor. Vivamus in sem volutpat, efficitur elit quis, suscipit lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam posuere tortor eget eros porta elementum. Maecenas pulvinar egestas ultrices. Donec et nibh mollis, vulputate lectus eu, molestie lorem. Donec pretium mattis elementum.</p>
+                            </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+            <div class="grid-footer">
+                <div>
+                    <a href="sobre.html">Quem Somos</a>
+                    <a href="campanhas.html">Campanhas</a>
+                    <a href="#">Como Contribuir</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                </div>
+                <div>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                </div>
+                <div>
+                    <p>Nome da Empresa<br>
+                    Rua D. Luís I, nº 6 e 20 D<br>
+                        1200-151 Lisboa<br>
+                    </p>
+                    <a href="tel:210000000">Tel. 210 000 000</a>
+                    <a href="mailto:geral@nomedaempresa">geral@nomedaempresa.pt</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&#169; Copyright 2019. Nome da Empresa.</p>
+            </div>
+    </footer>
+
+    <!-- javascript -->
+    <script src="assets/js/jquery3.1.1.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script id="myscript" src="assets/js/donations.js"></script>
+            
+</body>
+</html>

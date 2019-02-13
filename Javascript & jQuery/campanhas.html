@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Unicef</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- menu -->
+    <nav>
+        <a href="index.html" id="logo" class="menu-dark">LOGO</a>
+        <div class="nav menu-dark">
+            <a id="menu-icon"><i class="fas fa-bars icon"></i></a>
+            <ul class="menu menu-dark">
+                <li><a href="sobre.html">Quem Somos</a></li>
+                <li><a href="campanhas.html">Campanhas</a></li>
+                <li><a href="#">Como Contribuir</a></li>
+                <li class="access"><a href="#access">Login / Registo</a></li>
+            </ul>
+        </div>
+    </nav>
+        
+    <!-- popup login & registo -->
+    <div id="access" class="popup-hidden">
+        <div class="access-content">
+            <div class="login">
+                <h3>Inície a sua Sessão</h3>
+                <input type="text" name="username" placeholder="Username">
+                <input type="text" name="password" placeholder="Password">
+                <input type="submit" value="Enviar">
+            </div>
+            <div class="registo">
+                <hr/>
+                <p>Ainda não tem conta? <a href="#">Registe-se aqui!</a></p></div>
+                
+        </div>
+    </div>
+   
+    <!-- campanhas -->
+    <section id="recent-campaigns">
+        <h1>Campanhas Recentes</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in euismod nunc. Mauris pulvinar leo vitae leo lacinia, eu commodo dolor iaculis. Praesent sodales magna in accumsan aliquam. Fusce ac sem nec arcu dignissim feugiat. Nulla facilisi.</p>
+        
+        <!-- filtros desktop -->
+        <div class="filters">
+            <a id=button1 href="#" data-cat="all" class="filter active-filter" onclick="Filter('all',1)">Todas as Campanhas</a>
+            <a id=button2 href="#" data-cat="food" class="filter" onclick="Filter('food',2)">Alimentação</a>
+            <a id=button3 href="#" data-cat="housing" class="filter" onclick="Filter('housing',3)">Alojamento</a>
+            <a id=button4 href="#" data-cat="health" class="filter" onclick="Filter('health',4)">Saúde</a>
+            <a id=button5 href="#" data-cat="food animal" class="filter" onclick="Filter('animal',5)">Animais</a>
+        </div>
+
+        <!-- filtros mobile -->
+        <div class="filters-mobile">
+            <button class="filters-title">Filtros 
+                <i class="fa fa-caret-down"></i>
+            </button>
+                <div class="categories">
+                    <a id=button1 href="#" data-cat="all" class="filter active-filter" onclick="Filter('all',1)">Todas as Campanhas</a>
+                    <a id=button2 href="#" data-cat="food" class="filter" onclick="Filter('food',2)">Alimentação</a>
+                    <a id=button3 href="#" data-cat="housing" class="filter" onclick="Filter('housing',3)">Alojamento</a>
+                    <a id=button4 href="#" data-cat="health" class="filter" onclick="Filter('health',4)">Saúde</a>
+                    <a id=button5 href="#" data-cat="food animal" class="filter" onclick="Filter('animal',5)">Animais</a>
+                </div>
+        </div>
+
+        <!-- campanhas recentes - articles -->
+        <section id="articles" class="grid grid-campaigns">
+            
+            <article class="load " data-cat="food health">
+                <div>
+                    <img src="assets/img/campaigns/food-2.jpg">
+                </div>
+                <div class="campaign-info">
+                        <a href="campanha1.html">
+                            <h3>Nome da Campanha</h3>
+                            <i class="fas fa-link"></i>
+                        </a>
+                </div>
+            </article>
+            <article class="load" data-cat="food">
+                <div><img src="assets/img/campaigns/food.jpeg">
+                </div>
+                <div class="campaign-info">
+                        <a href="campanha1.html">
+                            <h3>Nome da Campanha 1</h3>
+                            <i class="fas fa-link"></i>
+                        </a>
+                </div>
+            </article>
+            <article class="load" data-cat="housing food">
+                <div><img src="assets/img/campaigns/house.jpeg">
+                </div>
+                <div class="campaign-info">
+                        <a href="campanha1.html">
+                            <h3>Nome da Campanha 1</h3>
+                            <i class="fas fa-link"></i>
+                        </a>
+                </div>
+            </article>
+            <article class="load" data-cat="food animal">
+                <div><img src="assets/img/campaigns/animal.jpeg">
+                </div>
+                <div class="campaign-info">
+                        <a href="campanha1.html">
+                            <h3>Nome da Campanha 1</h3>
+                            <i class="fas fa-link"></i>
+                        </a>
+                </div>
+            </article>
+            <article class="load" data-cat="health">
+                <div><img src="assets/img/campaigns/health.jpeg">
+                </div>
+                <div class="campaign-info">
+                        <a href="campanha1.html">
+                            <h3>Nome da Campanha 1</h3>
+                            <i class="fas fa-link"></i>
+                        </a>
+                </div>
+            </article>
+            <article class="load" data-cat="housing">
+                <div><img src="assets/img/campaigns/house-2.jpeg">
+                </div>
+                <div class="campaign-info">
+                        <a href="campanha1.html">
+                            <h3>Nome da Campanha 1</h3>
+                            <i class="fas fa-link"></i>
+                        </a>
+                </div>
+            </article>
+            <article class="load" data-cat="housing food">
+                <div><img src="assets/img/campaigns/house-3.jpeg">
+                </div>
+                <div class="campaign-info">
+                        <a href="campanha1.html">
+                            <h3>Nome da Campanha 1</h3>
+                            <i class="fas fa-link"></i>
+                        </a>
+                </div>
+            </article>
+            <article class="load" data-cat="housing">
+                <div><img src="assets/img/campaigns/house-4.jpeg">
+                </div>
+                <div class="campaign-info">
+                        <a href="campanha1.html">
+                            <h3>Nome da Campanha 1</h3>
+                            <i class="fas fa-link"></i>
+                        </a>
+                </div>
+            </article>
+            
+            <article class="load " data-cat="food health">
+                    <div>
+                        <img src="assets/img/campaigns/food-2.jpg">
+                    </div>
+                    <div class="campaign-info">
+                            <a href="campanha1.html">
+                                <h3>Nome da Campanha</h3>
+                                <i class="fas fa-link"></i>
+                            </a>
+                    </div>
+                </article>
+                <article class="load" data-cat="food">
+                    <div><img src="assets/img/campaigns/food.jpeg">
+                    </div>
+                    <div class="campaign-info">
+                            <a href="campanha1.html">
+                                <h3>Nome da Campanha 1</h3>
+                                <i class="fas fa-link"></i>
+                            </a>
+                    </div>
+                </article>
+                <article class="load" data-cat="housing food">
+                    <div><img src="assets/img/campaigns/house.jpeg">
+                    </div>
+                    <div class="campaign-info">
+                            <a href="campanha1.html">
+                                <h3>Nome da Campanha 1</h3>
+                                <i class="fas fa-link"></i>
+                            </a>
+                    </div>
+                </article>
+                <article class="load" data-cat="food animal">
+                    <div><img src="assets/img/campaigns/animal.jpeg">
+                    </div>
+                    <div class="campaign-info">
+                            <a href="campanha1.html">
+                                <h3>Nome da Campanha 1</h3>
+                                <i class="fas fa-link"></i>
+                            </a>
+                    </div>
+                </article>
+                <article class="load" data-cat="health">
+                    <div><img src="assets/img/campaigns/health.jpeg">
+                    </div>
+                    <div class="campaign-info">
+                            <a href="campanha1.html">
+                                <h3>Nome da Campanha 1</h3>
+                                <i class="fas fa-link"></i>
+                            </a>
+                    </div>
+                </article>
+                <article class="load" data-cat="housing">
+                    <div><img src="assets/img/campaigns/house-2.jpeg">
+                    </div>
+                    <div class="campaign-info">
+                            <a href="campanha1.html">
+                                <h3>Nome da Campanha 1</h3>
+                                <i class="fas fa-link"></i>
+                            </a>
+                    </div>
+                </article>
+                <article class="load" data-cat="housing food">
+                    <div><img src="assets/img/campaigns/house-3.jpeg">
+                    </div>
+                    <div class="campaign-info">
+                            <a href="campanha1.html">
+                                <h3>Nome da Campanha 1</h3>
+                                <i class="fas fa-link"></i>
+                            </a>
+                    </div>
+                </article>
+                <article class="load" data-cat="housing">
+                    <div><img src="assets/img/campaigns/house-4.jpeg">
+                    </div>
+                    <div class="campaign-info">
+                            <a href="campanha1.html">
+                                <h3>Nome da Campanha 1</h3>
+                                <i class="fas fa-link"></i>
+                            </a>
+                    </div>
+                </article>
+            
+                <article class="load " data-cat="food health">
+                        <div>
+                            <img src="assets/img/campaigns/food-2.jpg">
+                        </div>
+                        <div class="campaign-info">
+                                <a href="campanha1.html">
+                                    <h3>Nome da Campanha</h3>
+                                    <i class="fas fa-link"></i>
+                                </a>
+                        </div>
+                    </article>
+                    <article class="load" data-cat="food">
+                        <div><img src="assets/img/campaigns/food.jpeg">
+                        </div>
+                        <div class="campaign-info">
+                                <a href="campanha1.html">
+                                    <h3>Nome da Campanha 1</h3>
+                                    <i class="fas fa-link"></i>
+                                </a>
+                        </div>
+                    </article>
+                    <article class="load" data-cat="housing food">
+                        <div><img src="assets/img/campaigns/house.jpeg">
+                        </div>
+                        <div class="campaign-info">
+                                <a href="campanha1.html">
+                                    <h3>Nome da Campanha 1</h3>
+                                    <i class="fas fa-link"></i>
+                                </a>
+                        </div>
+                    </article>
+                    <article class="load" data-cat="food animal">
+                        <div><img src="assets/img/campaigns/animal.jpeg">
+                        </div>
+                        <div class="campaign-info">
+                                <a href="campanha1.html">
+                                    <h3>Nome da Campanha 1</h3>
+                                    <i class="fas fa-link"></i>
+                                </a>
+                        </div>
+                    </article>
+                    <article class="load" data-cat="health">
+                        <div><img src="assets/img/campaigns/health.jpeg">
+                        </div>
+                        <div class="campaign-info">
+                                <a href="campanha1.html">
+                                    <h3>Nome da Campanha 1</h3>
+                                    <i class="fas fa-link"></i>
+                                </a>
+                        </div>
+                    </article>
+                    <article class="load" data-cat="housing">
+                        <div><img src="assets/img/campaigns/house-2.jpeg">
+                        </div>
+                        <div class="campaign-info">
+                                <a href="campanha1.html">
+                                    <h3>Nome da Campanha 1</h3>
+                                    <i class="fas fa-link"></i>
+                                </a>
+                        </div>
+                    </article>
+                    <article class="load" data-cat="housing food">
+                        <div><img src="assets/img/campaigns/house-3.jpeg">
+                        </div>
+                        <div class="campaign-info">
+                                <a href="campanha1.html">
+                                    <h3>Nome da Campanha 1</h3>
+                                    <i class="fas fa-link"></i>
+                                </a>
+                        </div>
+                    </article>
+                    <article class="load" data-cat="housing">
+                        <div><img src="assets/img/campaigns/house-4.jpeg">
+                        </div>
+                        <div class="campaign-info">
+                                <a href="campanha1.html">
+                                    <h3>Nome da Campanha 1</h3>
+                                    <i class="fas fa-link"></i>
+                                </a>
+                        </div>
+                    </article>
+            
+        </section>
+
+        <div>
+            <button id="load-more" onclick="showMore()">Ver Mais</button>
+        </div>
+        <hr>
+
+    </section>
+
+    <!-- campanhas anteriores -->
+    <section id="past-campaigns">
+        <h1>Campanhas Anteriores</h1>
+        <p>Fusce arcu sem, volutpat eu maximus nec, egestas id orci. Mauris bibendum tortor a nisi elementum, ut vestibulum augue pharetra. Praesent efficitur massa in nibh laoreet, eu facilisis eros ullamcorper.</p>
+
+        <!-- campanhas recentes - articles -->
+        <section class="grid-campaigns grid-past-campaigns">
+            
+            <article data-cat="featured">
+                <div>
+                    <img src="assets/img/campaigns/health.jpeg">
+                </div>
+                <div class="campaign-info">
+                    <a href="campanha1.html">
+                        <h3>Nome da Campanha 1</h3>
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </article>
+            <article data-cat="featured">
+                <div><img src="assets/img/campaigns/food.jpeg">
+                </div>
+                <div class="campaign-info">
+                    <a href="campanha1.html">
+                        <h3>Nome da Campanha 1</h3>
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </article>
+            <article data-cat="featured">
+                <div><img src="assets/img/campaigns/house.jpeg">
+                </div>
+                <div class="campaign-info">
+                    <a href="campanha1.html">
+                        <h3>Nome da Campanha 1</h3>
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </article>
+            <article data-cat="featured">
+                <div><img src="assets/img/campaigns/animal.jpeg">
+                </div>
+                <div class="campaign-info">
+                    <a href="campanha1.html">
+                        <h3>Nome da Campanha 1</h3>
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </article>
+            <article data-cat="featured">
+                <div><img src="assets/img/campaigns/house-2.jpeg">
+                </div>
+                <div class="campaign-info">
+                    <a href="campanha1.html">
+                        <h3>Nome da Campanha 1</h3>
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </article>
+            <article data-cat="featured">
+                <div><img src="assets/img/campaigns/house-3.jpeg">
+                </div>
+                <div class="campaign-info">
+                    <a href="campanha1.html">
+                        <h3>Nome da Campanha 1</h3>
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </article>
+            <article data-cat="featured">
+                <div><img src="assets/img/campaigns/food-2.jpg">
+                </div>
+                <div class="campaign-info">
+                    <a href="campanha1.html">
+                        <h3>Nome da Campanha 1</h3>
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </article>
+           
+        </section>
+    </section>
+        
+    <!-- footer -->
+    <footer>
+            <div class="grid-footer">
+                <div>
+                    <a href="sobre.html">Quem Somos</a>
+                    <a href="campanhas.html">Campanhas</a>
+                    <a href="#">Como Contribuir</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                </div>
+                <div>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                </div>
+                <div>
+                    <p>Nome da Empresa<br>
+                    Rua D. Luís I, nº 6 e 20 D<br>
+                        1200-151 Lisboa<br>
+                    </p>
+                    <a href="tel:210000000">Tel. 210 000 000</a>
+                    <a href="mailto:geral@nomedaempresa">geral@nomedaempresa.pt</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&#169; Copyright 2019. Nome da Empresa.</p>
+            </div>
+        </footer>
+
+    <!-- javascript -->
+    <script src="assets/js/jquery3.1.1.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/campaigns.js"></script>
+
+</body>
+</html>

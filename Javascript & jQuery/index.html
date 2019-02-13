@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projecto Javascript</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!-- menu -->
+    <nav>
+            <a href="index.html" id="logo">LOGO</a>
+            <div class="nav">
+                <a id="menu-icon"><i class="fas fa-bars icon"></i></a>
+                <ul class="menu">
+                    <li><a href="sobre.html">Quem Somos</a></li>
+                    <li><a href="campanhas.html">Campanhas</a></li>
+                    <li><a href="#">Como Contribuir</a></li>
+                    <li class="access"><a href="#access">Login / Registo</a></li>
+                </ul>
+            </div>
+    </nav>
+
+    <!-- popup login & registo -->
+    <div id="access" class="popup-hidden">
+        <div class="access-content">
+            <div class="login">
+                <h3>Inície a sua Sessão</h3>
+                <input type="text" name="username" placeholder="Username">
+                <input type="text" name="password" placeholder="Password">
+                <input type="submit" value="Enviar">
+            </div>
+            <div class="registo">
+                <hr />
+                <p>Ainda não tem conta? <a href="#">Registe-se aqui!</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- slideshow -->
+    <header class="home-header">
+        <div id="slideshow">
+
+            <a class="fas arrows left" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="fas arrows right" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="slide slide-background1">
+                <div class="slide-grid">
+                    <div>
+                        <p>#campanha</p>
+                        <h1>Praesent magna, interdum vel felis.</h1>
+                        <a href="sobre.html">Saber Mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide slide-background2">
+                <div class="slide-grid">
+                    <div>
+                        <p>#quemsomos</p>
+                        <h1>Cras sit amet interdum mi.</h1>
+                        <a href="campanha1.html">Saber Mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide slide-background3">
+                <div class="slide-grid">
+                    <div>
+                        <p>#comocontribuir</p>
+                        <h1>Orci varius natoque penatibus et magnis.</h1>
+                        <a href="#">Saber Mais</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- campanhas -->
+    <section id="featured-campaigns">
+        <h1>Campanhas de Sucesso</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent cursus tristique fringilla. Duis id
+            tincidunt lectus, volutpat hendrerit enim. Mauris quis blandit dolor, vitae consequat metus.</p>
+        <section class="grid grid-campaigns">
+            <article data-cat="featured">
+                <div>
+                    <img src="assets/img/campaigns/health.jpeg">
+                </div>
+                <div class="campaign-info">
+                    <a href="campanha1.html">
+                        <h3>Nome da Campanha 1</h3>
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </article>
+            <article data-cat="featured">
+                <div><img src="assets/img/campaigns/food.jpeg">
+                </div>
+                <div class="campaign-info">
+                    <a href="campanha1.html">
+                        <h3>Nome da Campanha 1</h3>
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </article>
+            <article data-cat="featured">
+                <div><img src="assets/img/campaigns/house.jpeg">
+                </div>
+                <div class="campaign-info">
+                    <a href="campanha1.html">
+                        <h3>Nome da Campanha 1</h3>
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </article>
+            <article data-cat="featured">
+                <div><img src="assets/img/campaigns/animal.jpeg">
+                </div>
+                <div class="campaign-info">
+                    <a href="campanha1.html">
+                        <h3>Nome da Campanha 1</h3>
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </article>
+            <article data-cat="featured">
+                <div><img src="assets/img/campaigns/house-2.jpeg">
+                </div>
+                <div class="campaign-info">
+                    <a href="campanha1.html">
+                        <h3>Nome da Campanha 1</h3>
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </article>
+            <article data-cat="featured">
+                <div><img src="assets/img/campaigns/house-3.jpeg">
+                </div>
+                <div class="campaign-info">
+                    <a href="campanha1.html">
+                        <h3>Nome da Campanha 1</h3>
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </article>
+            <article data-cat="featured">
+                <div><img src="assets/img/campaigns/food-2.jpg">
+                </div>
+                <div class="campaign-info">
+                    <a href="campanha1.html">
+                        <h3>Nome da Campanha 1</h3>
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </article>
+            <article data-cat="featured">
+                <div><img src="assets/img/campaigns/house-4.jpeg">
+                </div>
+                <div class="campaign-info">
+                    <a href="campanha1.html">
+                        <h3>Nome da Campanha 1</h3>
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </article>
+
+        </section>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="grid-footer">
+            <div>
+                <a href="sobre.html">Quem Somos</a>
+                <a href="campanhas.html">Campanhas</a>
+                <a href="#">Como Contribuir</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </div>
+            <div>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </div>
+            <div>
+                <p>Nome da Empresa<br>
+                Rua D. Luís I, nº 6 e 20 D<br>
+                    1200-151 Lisboa<br>
+                </p>
+                <a href="tel:210000000">Tel. 210 000 000</a>
+                <a href="mailto:geral@nomedaempresa">geral@nomedaempresa.pt</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; Copyright 2019. Nome da Empresa.</p>
+        </div>
+    </footer>
+
+    <!-- javascript -->
+    <script src="assets/js/jquery3.1.1.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/slideshow.js"></script>
+
+</body>
+</html>
